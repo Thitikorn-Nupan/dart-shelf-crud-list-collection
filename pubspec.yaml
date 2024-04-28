@@ -1,0 +1,25 @@
+# Every language has a mechanism for managing external packages
+# As, Maven or Gradle for Java So, The package manager for Dart is pub
+# File pubsec.yaml. YAML is the acronym for Yet Another Markup Language.
+# The pub tool can be used to download all various libs that an application requires
+#
+# ******* The important pub commands *********
+# pub get : Helps to get all packages your application is depending on.
+# pub upgrade : Upgrades all your dependencies to a newer version
+# pub build : This s used for building your web application and it will create a build folder , with all related scripts in it
+# pub help : This will give you help for all different pub commands.
+name: 'dar_shelf_backend_crud_list_collection'
+version: 0.0.1
+environment:
+  sdk: 3.3.4
+#  All dependents set on below
+###### dependencies are modules which are also required at runtime.
+###### If put packages all in dependencies make my apk size be bigger
+dependencies:
+  logging: ^1.2.0
+  # Shelf, is a Web Server Middleware, not a full blown server framework
+  shelf: ^1.4.1
+  # While Shelf (core) lacks the functionality of setting Routes,
+  # we use shelf_router which will give you the route_demo instance, with all the REST methods, such as GET , POST , ...
+  shelf_router: ^1.1.4
+
